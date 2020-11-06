@@ -1,5 +1,5 @@
 {
-  "name": "postcss-css-compare",
+  "name": "postcss-color-tokenizer",
   "version": "0.0.0",
   "description": "PostCSS plugin to compare css files",
   "keywords": [
@@ -13,7 +13,7 @@
   },
   "author": "ialarmedalien <ialarmedalien@gmail.com>",
   "license": "MIT",
-  "repository": "ialarmedalien/postcss-css-compare",
+  "repository": "ialarmedalien/postcss-color-tokenizer",
   "engines": {
     "node": ">=10.0.0"
   },

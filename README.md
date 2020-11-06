@@ -6,13 +6,17 @@
 
 ```css
 .foo {
-    /* Input example */
+    color: black;
+    background: #fff;
+    border: 2px solid rgb(0 0 0);
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+    color: $color_0;
+    background: $color_1;
+    border: 2px solid $color_0;
 }
 ```
 
@@ -21,11 +25,10 @@
 **Step 1:** Install plugin:
 
 ```sh
-npm install --save-dev postcss postcss-css-compare
+npm install --save-dev postcss postcss-color-tokenizer
 ```
 
-**Step 2:** Check you project for existed PostCSS config: `postcss.config.js`
-in the project root, `"postcss"` section in `package.json`
+**Step 2:** Check your project for an existing PostCSS config: `postcss.config.js` in the project root, `"postcss"` section in `package.json`
 or `postcss` in bundle config.
 
 If you do not use PostCSS, add it according to [official docs]
@@ -36,7 +39,7 @@ and set this plugin in settings.
 ```diff
 module.exports = {
   plugins: [
-+   require('postcss-css-compare'),
++   require('postcss-color-tokenizer'),
     require('autoprefixer')
   ]
 }
