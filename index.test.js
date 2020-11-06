@@ -43,12 +43,17 @@ const fixtures = [
     desc: 'tricky input',
     input: [
       '.classnameWithoutColorName .widget.button-widget {\n  margin: auto 2px;\n  border-color: #b1afb0;\n}\n',
-      '.grey .widget.button-widget a:link, .grey .widget.button-widget a:hover {\n  color: #b1afb0;\n}'
+      '.grey .widget.button-widget a:link, .grey .widget.button-widget a:hover {\n  color: #B1AFB0;\n}'
     ].join(''),
     output: [
       '.classnameWithoutColorName .widget.button-widget {\n  margin: auto 2px;\n  border-color: $color_0;\n}\n',
       '.grey .widget.button-widget a:link, .grey .widget.button-widget a:hover {\n  color: $color_0;\n}'
     ].join(''),
+  },
+  {
+    desc: 'border',
+    input: '.classname {\n  border: 2px solid white;\n}',
+    output: '.classname {\n  border: 2px solid $color_0;\n}',
   },
   {
     desc: 'background colour',
@@ -76,7 +81,7 @@ const fixtures = [
       '@-webkit-keyframes spin {\n',
       '  /* This comment used to break things */\n',
       '  0% {\n    -webkit-transform: rotate(0deg);\n    color: black;\n  }\n',
-      '  100% {\n    -webkit-transform: rotate(360deg);\n    /* It should still pick this one up */\n    color: $FFA;\n',
+      '  100% {\n    -webkit-transform: rotate(360deg);\n    /* It should still pick this one up */\n    color: #FFA;\n',
       '  }\n}'
     ].join(''),
     output: [
