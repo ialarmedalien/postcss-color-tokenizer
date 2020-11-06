@@ -1,6 +1,6 @@
 {
   "name": "postcss-color-tokenizer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS plugin to convert css colours into variables for SCSS",
   "keywords": [
     "postcss",
@@ -23,7 +23,6 @@
     "postcss": "^8.1.0"
   },
   "dependencies": {
-    "pipetteur": "^2.0.3",
     "postcss": "^8.1.6"
   },
   "devDependencies": {

@@ -2,6 +2,8 @@
 
 [PostCSS] plugin to convert colour values into variables.
 
+Alpha release; does not output new SCSS variables to a stylesheet at present.
+
 [PostCSS]: https://github.com/postcss/postcss
 
 ```css

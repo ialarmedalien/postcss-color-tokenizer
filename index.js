@@ -28,6 +28,7 @@ module.exports = postcss.plugin("postcss-colour-tokenizer", function() {
         }
       })
     })
+    console.log(colors)
   }
 })
 
