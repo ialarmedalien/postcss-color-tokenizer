@@ -1,6 +1,6 @@
-# PostCSS Css Compare
+# PostCSS Color Tokenizer
 
-[PostCSS] plugin to compare css files.
+[PostCSS] plugin to convert colour values into variables.
 
 [PostCSS]: https://github.com/postcss/postcss
 
